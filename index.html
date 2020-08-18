@@ -402,7 +402,12 @@ Sing it loud like! (Na na na...)
                 fetch(`https://api.lyrics.ovh/v1/${apiArtist}/${apiTitle}`) //fetching the lyrics of the song
                 .then(apiResponse => apiResponse.json())
                 .then(apiData =>{
-                    document.getElementById('lyrics').innerText = apiData.lyrics;
+                    if(apiData.lyrics == 'undefined'){
+                        document.getElementById('lyrics').innerText = 'Sorry, lyrics of this song is not available';
+                    }
+                    else{
+                        document.getElementById('lyrics').innerText = apiData.lyrics;
+                    }
                 })
             });
         }    
