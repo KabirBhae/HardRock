@@ -49,131 +49,19 @@
                     <input id="search-input" type="text" class="form-control" placeholder="Enter your artist song name">
                     <button id="search-btn" class="btn btn-success search-btn">Search</button>
                 </div>
-            </div>
-            <!-- === Simple results === -->
-            <div class="d-flex justify-content-center">
-                <div class="">
-                    <p class="author lead"><strong> <span id="songtitle-0">Purple Noon</span> </strong> Album by <span id="album-0">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-1">Purple Noon</span> </strong> Album by <span id="album-1">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-2">Purple Noon</span> </strong> Album by <span id="album-2">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-3">Purple Noon</span> </strong> Album by <span id="album-3">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-4">Purple Noon</span> </strong> Album by <span id="album-4">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-5">Purple Noon</span> </strong> Album by <span id="album-5">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-6">Purple Noon</span> </strong> Album by <span id="album-6">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-7">Purple Noon</span> </strong> Album by <span id="album-7">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-8">Purple Noon</span> </strong> Album by <span id="album-8">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong> <span id="songtitle-9">Purple Noon</span> </strong> Album by <span id="album-9">Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                </div>           </div>
-            <!-- Single Lyrics -->
-         <div class="single-lyrics text-center">
-                <button class="btn go-back">&lsaquo;</button>
-                <h2 class="text-success mb-4">Pentatonix - Na Na Na</h2>
-                <pre class="lyric text-white">
-    Wont go whistling like the wind blows,
-    Looking out my window,
-    Just to see the shine
-    Maybe you might call it crazy,
-    How Im acting lately,
-
-    Skipping through the sky
-
-
-
-     I see so clearly,
-
-    Why Im always feeling free.
-
-    So I sleep when my dreams,
-
-    Looking like reality
-
-
-
-    (Gonna feel it! Na na na...) x4
-
-
-
-    Gonna feel it!
-
-
-
-    I know where the greener grass grows
-
-    Youll just have to follow
-
-    To the other side
-
-
-
-     Lets go tiptoe on a tight rope,
-
-    Fallings only natural
-
-    Just spread your wings and fly
-
-
-
-    Youll see so clearly,
-
-    Why Im always feeling free.
-
-    So I sleep when our dreams
-
-    Looking like reality
-
-
-
-    (Gonna feel it! Na na na...) x4
-
-
-
-    Bring it down like
-
-    Ohh way oh
-
-    Yeah yeah yeah yeah yeah yeah
-
-    Break it down like
-
-    Ohh way oh
-
-     Yeah, yeah, yeah...
-
-    All around like
-
-    Ohh way oh
-
-    Yeah, yeah, yeah...
-
-    Sing it loud like!
-
-    Ohh way oh
-
-    Ah oo oo ooo
-
-
-
-     Gonna feel it! (Na na na...)
-
-     Make it sound like! (Na na na...)
-
-    All around like! (Na na na...)
-
-    Sing it loud like! (Na na na...)
-
-    Gonna feel like! (Na na na...)
-                </pre>
-            </div>
+            </div>            
+            
             <!-- === Fancy results === -->
             <div class="search-result col-md-8 mx-auto py-4">
                 <!-- single result -->
                 <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="songtitle-0" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum0" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-0">Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
+                        <button onclick="takeData(0)" class="btn btn-success">Get Lyrics</button>
                     </div>
                 </div>
                 <!-- ./ single result -->
@@ -181,41 +69,214 @@
                 <!-- single result -->
                 <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="songtitle-1" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum1" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-1">Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
+                        <button onclick="takeData(1)" class="btn btn-success">Get Lyrics</button>
                     </div>
                 </div>
                 <!-- ./ single result -->
                 <!-- single result -->
                 <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="songtitle-2" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum2" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-2">Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
+                        <button onclick="takeData(2)" class="btn btn-success">Get Lyrics</button>
                     </div>
                 </div>
                 <!-- ./ single result -->
                 <!-- single result -->
                 <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="songtitle-3" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum3" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-3">Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
+                        <button onclick="takeData(3)" class="btn btn-success">Get Lyrics</button>
                     </div>
                 </div>
                 <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-4" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum4" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-4">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(4)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-5" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum5" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-5">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(5)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-6" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum6" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-6">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(6)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-7" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum7" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-7">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(7)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-8" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum8" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-8">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(8)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                <!-- single result -->
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 id="songtitle-9" class="lyrics-name">Purple Noon</h3>
+                        <p> <span class='color-it'>Album: <span><span id="fromAlbum9" class='lead'>Pop Rock</span> </p>
+                        <p class="author lead">Album by <span id="albumBy-9">Washed Out</span></p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button onclick="takeData(9)" class="btn btn-success">Get Lyrics</button>
+                    </div>
+                </div>
+                <!-- ./ single result -->
+                
             </div>
+            
+        <div class="single-lyrics text-center"> <!-- This is the lyrics section -->
+            <button class="btn go-back">&lsaquo;</button>
+            <h2 class="text-success mb-4"> <span id="artistNameLyrics">Pentatonix</span> - <span id="titleNameLyrics">Na Na Na</span></h2>
+            <pre id="lyrics" class="lyric text-white">
+Wont go whistling like the wind blows,
+Looking out my window,
+Just to see the shine
+Maybe you might call it crazy,
+How Im acting lately,
+
+Skipping through the sky
 
 
 
-        </main>
+I see so clearly,
+
+Why Im always feeling free.
+
+So I sleep when my dreams,
+
+Looking like reality
+
+
+
+(Gonna feel it! Na na na...) x4
+
+
+
+Gonna feel it!
+
+
+
+I know where the greener grass grows
+
+Youll just have to follow
+
+To the other side
+
+
+
+Lets go tiptoe on a tight rope,
+
+Fallings only natural
+
+Just spread your wings and fly
+
+
+
+Youll see so clearly,
+
+Why Im always feeling free.
+
+So I sleep when our dreams
+
+Looking like reality
+
+
+
+(Gonna feel it! Na na na...) x4
+
+
+
+Bring it down like
+
+Ohh way oh
+
+Yeah yeah yeah yeah yeah yeah
+
+Break it down like
+
+Ohh way oh
+
+Yeah, yeah, yeah...
+
+All around like
+
+Ohh way oh
+
+Yeah, yeah, yeah...
+
+Sing it loud like!
+
+Ohh way oh
+
+Ah oo oo ooo
+
+
+
+Gonna feel it! (Na na na...)
+
+Make it sound like! (Na na na...)
+
+All around like! (Na na na...)
+
+Sing it loud like! (Na na na...)
+
+                Gonna feel like! (Na na na...)
+            </pre>
+        </div>
+    </main>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -224,7 +285,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom Script Here -->
-    <script>
+    <script> //this is the first script tag
         const searchButton = document.getElementById('search-btn');
         searchButton.addEventListener('click',function(){
             const searchInput = document.getElementById('search-input').value;
@@ -232,73 +293,120 @@
             fetch(link)
             .then(res => res.json())
             .then(data => {
-                const title0 = document.getElementById('songtitle-0');
-                title0.innerText = data.data[0].album.title;
+                
+                const title0 = document.getElementById('songtitle-0'); //changing the current title to the title found from API
+                title0.innerText = data.data[0].title;
 
                 const title1 = document.getElementById('songtitle-1');
-                title1.innerText = data.data[1].album.title;
+                title1.innerText = data.data[1].title;
 
                 const title2 = document.getElementById('songtitle-2');
-                title2.innerText = data.data[2].album.title;
+                title2.innerText = data.data[2].title;
 
                 const title3 = document.getElementById('songtitle-3');
-                title3.innerText = data.data[3].album.title;
+                title3.innerText = data.data[3].title;
 
                 const title4 = document.getElementById('songtitle-4');
-                title4.innerText = data.data[4].album.title;
+                title4.innerText = data.data[4].title;
 
                 const title5 = document.getElementById('songtitle-5');
-                title5.innerText = data.data[5].album.title;
+                title5.innerText = data.data[5].title;
 
                 const title6 = document.getElementById('songtitle-6');
-                title6.innerText = data.data[6].album.title;
+                title6.innerText = data.data[6].title;
 
                 const title7 = document.getElementById('songtitle-7');
-                title7.innerText = data.data[7].album.title;
+                title7.innerText = data.data[7].title;
 
                 const title8 = document.getElementById('songtitle-8');
-                title8.innerText = data.data[8].album.title;
+                title8.innerText = data.data[8].title;
 
                 const title9 = document.getElementById('songtitle-9');
-                title9.innerText = data.data[9].album.title;
+                title9.innerText = data.data[9].title;
 
-                const album0 = document.getElementById('album-0');
+                const album0 = document.getElementById('albumBy-0'); //changing the current name of the artist to the name of the artist found from API
                 album0.innerText = data.data[0].artist.name;
 
-                const album1 = document.getElementById('album-1');
+                const album1 = document.getElementById('albumBy-1');
                 album1.innerText = data.data[1].artist.name;
 
-                const album2 = document.getElementById('album-2');
+                const album2 = document.getElementById('albumBy-2');
                 album2.innerText = data.data[2].artist.name;
 
-                const album3 = document.getElementById('album-3');
+                const album3 = document.getElementById('albumBy-3');
                 album3.innerText = data.data[3].artist.name;
 
-                const album4 = document.getElementById('album-4');
+                const album4 = document.getElementById('albumBy-4');
                 album4.innerText = data.data[4].artist.name;
 
-                const album5 = document.getElementById('album-5');
+                const album5 = document.getElementById('albumBy-5');
                 album5.innerText = data.data[5].artist.name;
 
-                const album6 = document.getElementById('album-6');
+                const album6 = document.getElementById('albumBy-6');
                 album6.innerText = data.data[6].artist.name;
 
-                const album7 = document.getElementById('album-7');
+                const album7 = document.getElementById('albumBy-7');
                 album7.innerText = data.data[7].artist.name;
 
-                const album8 = document.getElementById('album-8');
+                const album8 = document.getElementById('albumBy-8');
                 album8.innerText = data.data[8].artist.name;
 
-                const album9 = document.getElementById('album-9');
+                const album9 = document.getElementById('albumBy-9');
                 album9.innerText = data.data[9].artist.name;
 
+                const fromAlbum0 = document.getElementById('fromAlbum0') //changing the current album name to the album name found from the API
+                fromAlbum0.innerText = data.data[0].album.title;
+
+                const fromAlbum1 = document.getElementById('fromAlbum1')
+                fromAlbum1.innerText = data.data[1].album.title;
+
+                const fromAlbum2 = document.getElementById('fromAlbum2')
+                fromAlbum2.innerText = data.data[2].album.title;
+
+                const fromAlbum3 = document.getElementById('fromAlbum3')
+                fromAlbum3.innerText = data.data[3].album.title;
+
+                const fromAlbum4 = document.getElementById('fromAlbum4')
+                fromAlbum4.innerText = data.data[4].album.title;
+
+                const fromAlbum5 = document.getElementById('fromAlbum5')
+                fromAlbum5.innerText = data.data[5].album.title;
+
+                const fromAlbum6 = document.getElementById('fromAlbum6')
+                fromAlbum6.innerText = data.data[6].album.title;
+
+                const fromAlbum7 = document.getElementById('fromAlbum7')
+                fromAlbum7.innerText = data.data[7].album.title;
+
+                const fromAlbum8 = document.getElementById('fromAlbum8')
+                fromAlbum8.innerText = data.data[8].album.title;
+
+                const fromAlbum9 = document.getElementById('fromAlbum9')
+                fromAlbum9.innerText = data.data[9].album.title;
             })
         })
 
-
-
-
-
+    </script>
+    <script> //this is the second script tag
+        function takeData(number){
+            const searchInput = document.getElementById('search-input').value;
+            const link = `https://api.lyrics.ovh/suggest/${searchInput}`;
+            
+            fetch(link)
+            .then(res => res.json())
+            .then(data =>{
+                const apiArtist = document.getElementById(`albumBy-${number}`).innerText;
+                const apiTitle = data.data[number].title;
+                document.getElementById('artistNameLyrics').innerText = apiArtist;
+                document.getElementById('titleNameLyrics').innerText = apiTitle; 
+                fetch(`https://api.lyrics.ovh/v1/${apiArtist}/${apiTitle}`) //fetching the lyrics of the song
+                .then(apiResponse => apiResponse.json())
+                .then(apiData =>{
+                    document.getElementById('lyrics').innerText = apiData.lyrics;
+                })
+            });
+        }    
+        
     </script>
 
 </body>

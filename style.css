@@ -38,4 +38,8 @@ body{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
-
+.color-it{
+    color: #28a745;
+    font: 300;
+    font-weight: 600;
+}
